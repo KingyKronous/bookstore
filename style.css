@@ -1,0 +1,175 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	outline:none;
+	padding:0;
+	margin:0;
+}
+
+html{
+	height:auto;
+	min-height:100%;
+	padding:0;
+	margin:0;
+}
+
+body{
+	height:100%;
+	overflow-x:hidden;
+    background-color:#FFF;
+    font-family:'OpenSans';
+	font-size:clamp(14px, 2vw, 16px);
+	color:#141414;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	line-height:120%;
+	padding:0;
+	margin:0;
+}
+
+.cleall{clear: both;}
+.left{float: left;}
+.right{float: right}
+.content{max-width:1280px; margin: auto; padding:clamp(10px, 1%, 15px) 0;}
+
+.button{display: inline-block; background-color:#3cb64a; color:#fff; font-family:'OpenSans'; font-size: 16px; border-radius:21px; padding:10px 30px; text-transform:uppercase; text-decoration:none; -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out;}
+.button:hover{background-color: #2d9b34;}
+
+
+/* HEADER */
+header{max-height:128px; padding:0; margin:0;}
+
+/* --- SEARCH --- */
+header .search{margin:30px 20px;}
+header .search input{font-size:22px; padding:5px 10px; margin:0;}
+header .search input.bar{border-radius:10px 0 0 10px;}
+header .search input.submit{border-radius:0 10px 10px 0;}
+
+/* --- NAVIGATION --- */
+header nav{position:relative; padding:0; margin:0;}
+header nav ul{list-style-type:none; padding:0; margin:0;}
+header nav ul li{float:left;}
+header nav a{display:inline-block; color:#000; text-decoration:none; padding:40px 32px; margin:0; transition:all 1.6s ease-out;}
+header nav a:hover{background-color:#bfbfbf; transition-duration:.2s;}
+header nav li:first-child a{border-radius:15px 0 0 15px;}
+header nav li:last-child a{border-radius:0 15px 15px 0;}
+
+
+/* CATALOGUE */
+section.catalogue{display:block; position:relative; background-color:#f1f1f1; padding:clamp(30px, 10vw, 100px) 0; margin:0;}
+section.catalogue h3{float:left; color:#141414; font-family:'bebas_neueregular'; font-size: 48px; font-weight:normal; line-height:100%; margin:auto auto 40px auto;}
+
+section.catalogue a.book{position:relative; width:calc(33.3334% - 36px); max-width:410px; min-height:170px; display:block; float:left; color:#141414; background-color:#FFF; text-decoration:none; cursor:default; padding:10px 10px; margin:0 0 24px 24px; box-shadow:0 0 20px 5px rgba(0,0,0,0.2); -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
+section.catalogue a.book:nth-of-type(3n + 1){clear:left; margin:0 0 24px 0;}
+section.catalogue a.book:hover{background-color:#f5fcff; box-shadow:0 0 20px 5px rgba(0,0,0,0.3);}
+section.catalogue a.book h4{min-height:24px; font-family:'OpenSansBold'; font-weight: normal; font-size:20px;}
+section.catalogue a.book button{position:absolute; width:95%; bottom:0; font-family:'OpenSans'; font-size:18px; border:none; border-radius:3px; padding:5px 0; margin:10px 0; transition:all 1.6s ease-out;}
+section.catalogue a.book button:hover{background-color:#ed9149; transition-duration:.2s;}
+
+
+
+
+/* FOOTER */
+
+/* --- TOP --- */
+footer .top{background-color:#d8d8d8; color:#141414; padding:60px 0 60px 0; margin:0;}
+
+footer .top .left ul{list-style-type:none; padding:0; margin:0;}
+footer .top .left ul li{float:left;}
+footer .top .left ul li a:hover img{box-shadow:0 0 20px 5px rgba(0,0,0,0.3);}
+
+footer .top .right ul{list-style-type:none; padding:0; margin:0;}
+footer .top .right ul li:hover{color:#2a4ca1; cursor:pointer;}
+
+/* --- BOTTOM --- */
+footer .bottom{background-color:#424242; color: #fff;}
+footer .bottom p.left{font-size:14px;}
+footer .bottom strong{font-family:'OpenSansBold';font-weight:normal;}
+footer .bottom p.right{font-family:'Verdana'; font-size:12px;}
+footer .bottom p.right a{color:#f60; text-decoration:none;}
+footer .bottom p.right a:hover{text-decoration:underline;}
+
+
+/* */
+@font-face {
+	font-family:'OpenSans';
+	src:url('Fonts/OpenSans.eot');
+	src:url('Fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+		url('Fonts/OpenSans.woff') format('woff'),
+		url('Fonts/OpenSans.ttf') format('truetype'),
+		url('Fonts/OpenSans.svg#open_sansregular') format('svg');
+	font-weight:normal;
+	font-style:normal;
+	font-display:fallback;
+}
+
+@font-face {
+	font-family:'OpenSansBold';
+	src:url('Fonts/OpenSansBold.eot');
+	src:url('Fonts/OpenSansBold.eot?#iefix') format('embedded-opentype'),
+		url('Fonts/OpenSansBold.woff') format('woff'),
+		url('Fonts/OpenSansBold.ttf') format('truetype'),
+		url('Fonts/OpenSansBold.svg#open_sansbold') format('svg');
+	font-weight:normal;
+	font-style:normal;
+	font-display:fallback;
+}
+
+@font-face {
+	font-family:'OpenSansLight';
+	src:url('Fonts/OpenSansLight.eot');
+	src:url('Fonts/OpenSansLight.eot?#iefix') format('embedded-opentype'),
+		url('Fonts/OpenSansLight.woff') format('woff'),
+		url('Fonts/OpenSansLight.ttf') format('truetype'),
+		url('Fonts/OpenSansLight.svg#open_sanslight') format('svg');
+	font-weight:normal;
+	font-style:normal;
+	font-display:fallback;
+}
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('Fonts/bebasneue-bold.eot');
+    src: url('Fonts/bebasneue-bold.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/bebasneue-bold.woff2') format('woff2'),
+         url('Fonts/bebasneue-bold.woff') format('woff'),
+         url('Fonts/bebasneue-bold.ttf') format('truetype'),
+         url('Fonts/bebasneue-bold.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-display:fallback;
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('Fonts/bebasneue-light.eot');
+    src: url('Fonts/bebasneue-light.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/bebasneue-light.woff2') format('woff2'),
+         url('Fonts/bebasneue-light.woff') format('woff'),
+         url('Fonts/bebasneue-light.ttf') format('truetype'),
+         url('Fonts/bebasneue-light.svg#bebas_neuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-display:fallback;
+}
+
+
+
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('Fonts/bebasneue-regular.eot');
+    src: url('Fonts/bebasneue-regular.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/bebasneue-regular.woff2') format('woff2'),
+         url('Fonts/bebasneue-regular.woff') format('woff'),
+         url('Fonts/bebasneue-regular.ttf') format('truetype'),
+         url('Fonts/bebasneue-regular.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+	font-display:fallback;
+}
