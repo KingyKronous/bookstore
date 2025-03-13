@@ -13,7 +13,7 @@
 			<div class="content">
 				<img alt="Logo" src="logo.png" width="100px" height="100px" class="left"></img>
 				<div class="search left">
-					<input type="text" placeholder="Потърски книга..." class="bar" id="bar" onkeyup="filterBooks()"><input type="submit" value="Go" class="submit">
+					<input type="text" placeholder="Потърси книга..." class="bar" id="bar" onkeyup="searchBooks()"><input type="submit" value="Go" class="submit" onclick="searchBooks()">
 				</div>
 				<nav class="right">
 					<ul>
@@ -31,38 +31,11 @@
 		<section class="catalogue">
 			<div class="content">
 				<h3>Нашият каталог</h3>
+				<p id="noResults" style="display:none;">Няма намерени книги.</p>
 				<div id="cat">
-					<a href="#" class="book">
-						<h4>There is no antimemetics division</h4>
-						<strong>qntm</strong>
-						<p>This is not your first day.</p>
-						<button>Подробности</button>
-					</a>
 					
-					<a href="#" class="book">
-						<h4>Book2</h4>
-						<strong>Aaa</strong>
-						<p>Test</p>
-						<button>Подробности</button>
-					</a>
-					
-					<a href="#" class="book">
-						<h4>There is no antimemetics division</h4>
-						<strong>qntm</strong>
-						<p>This is not your first day.</p>
-						<button>Подробности</button>
-					</a>
-					
-					<a href="#" class="book">
-						<h4>There is no antimemetics division</h4>
-						<strong>qntm</strong>
-						<p>This is not your first day.</p>
-						<button>Подробности</button>
-					</a>
-					
-					
-					<div class="cleall"></div>
 				</div>
+				<div class="cleall"></div>
 			</div>
 		</section>
 		

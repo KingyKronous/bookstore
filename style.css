@@ -61,12 +61,12 @@ header nav li:last-child a{border-radius:0 15px 15px 0;}
 section.catalogue{display:block; position:relative; background-color:#f1f1f1; padding:clamp(30px, 10vw, 100px) 0; margin:0;}
 section.catalogue h3{float:left; color:#141414; font-family:'bebas_neueregular'; font-size: 48px; font-weight:normal; line-height:100%; margin:auto auto 40px auto;}
 
-section.catalogue a.book{position:relative; width:calc(33.3334% - 36px); max-width:410px; min-height:170px; display:block; float:left; color:#141414; background-color:#FFF; text-decoration:none; cursor:default; padding:10px 10px; margin:0 0 24px 24px; box-shadow:0 0 20px 5px rgba(0,0,0,0.2); -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
-section.catalogue a.book:nth-of-type(3n + 1){clear:left; margin:0 0 24px 0;}
-section.catalogue a.book:hover{background-color:#f5fcff; box-shadow:0 0 20px 5px rgba(0,0,0,0.3);}
-section.catalogue a.book h4{min-height:24px; font-family:'OpenSansBold'; font-weight: normal; font-size:20px;}
-section.catalogue a.book button{position:absolute; width:95%; bottom:0; font-family:'OpenSans'; font-size:18px; border:none; border-radius:3px; padding:5px 0; margin:10px 0; transition:all 1.6s ease-out;}
-section.catalogue a.book button:hover{background-color:#ed9149; transition-duration:.2s;}
+section.catalogue .book{position:relative; width:calc(33.3334% - 36px); max-width:410px; min-height:100px; display:block; float:left; color:#141414; background-color:#FFF; text-decoration:none; cursor:default; padding:10px 10px 60px 10px; margin:0 0 24px 24px; box-shadow:0 0 20px 5px rgba(0,0,0,0.2); -webkit-transition:all 0.3s ease-in-out; -moz-transition:all 0.3s ease-in-out; -o-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
+section.catalogue .book:nth-of-type(3n + 1){clear:left; margin:0 0 24px 0;}
+section.catalogue .book:hover{background-color:#f5fcff; box-shadow:0 0 20px 5px rgba(0,0,0,0.3);}
+section.catalogue .book h4{min-height:24px; font-family:'OpenSansBold'; font-weight: normal; font-size:20px;}
+section.catalogue .book button{position:absolute; width:95%; bottom:0; font-family:'OpenSans'; font-size:18px; border:none; border-radius:3px; padding:5px 0; margin:10px 0; transition:all 1.6s ease-out;}
+section.catalogue .book button:hover{background-color:#ed9149; transition-duration:.2s;}
 
 
 
